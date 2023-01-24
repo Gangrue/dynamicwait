@@ -1,4 +1,4 @@
-function addToCart(productId, quantity, ManagingOrganizationId, CurrentPurchasingOrganizationId) {
+function addToCart(productId, quantity, ManagingOrganizationId, CurrentPurchasingOrganizationId, CurrentUserProfileId) {
     fetch("https://marketflux-pilot.foundrycommerce.com/product/addalltocart", {
       "headers": {
         "accept": "application/json, text/plain, */*",
