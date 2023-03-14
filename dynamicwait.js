@@ -3,7 +3,7 @@ function waitForElement(elementQuery, callBack, elementCount = 1) {
 	let timeBetweenCheckIntervals = 10;
 	waitForElementExtended(callBack, elementQuery, timeToWait, timeBetweenCheckIntervals, elementCount);
 }
-function waitForElementExtended(executeFunction, selectorToWaitFor, timeToWait = 200, timeBetweenCheckIntervals = 10, elementCount = 1) {
+function waitForElementExtended(executeFunction, selectorToWaitFor, timeToWait = 1000, timeBetweenCheckIntervals = 30, elementCount = 1) {
 	setTimeout(function() {
 		if (!ExecuteIfElementLoaded(executeFunction, selectorToWaitFor, elementCount) && timeToWait >= 0) {
 			waitForElementExtended(executeFunction, selectorToWaitFor, timeToWait-timeBetweenCheckIntervals, timeBetweenCheckIntervals, elementCount);
