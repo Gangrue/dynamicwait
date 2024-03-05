@@ -1,4 +1,5 @@
 # dynamicwait
+Dynamically wait for a wanted element to appear. Access it immediatly with a call back.
 
 ## Installation:
 Copy paste the code at https://gangrue.github.io/dynamicwait/dynamicwait.js, and include it in javascript.
@@ -6,7 +7,6 @@ Alternatively include:
 <script type="text/javascript" src="jquery-3.3.1.js"></script>
 <script type="text/javascript" src="https://gangrue.github.io/dynamicwait/dynamicwait.js"></script>
 
-Dynamically wait for a wanted element to appear. Access it immediatly with a call back.
 ## Asynchronous Javascript has it's downsides.
 It takes ages for elements to appear on the DOM and you can never truly know when they are loaded.
 The worst way to work with this is using a native "setTimeout" function.
